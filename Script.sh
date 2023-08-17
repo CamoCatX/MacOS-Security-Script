@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# https://privacy.sexy — v0.12.0 — Thu, 17 Aug 2023 18:10:10 GMT
 if [ "$EUID" -ne 0 ]; then
     script_path=$([[ "$0" = /* ]] && echo "$0" || echo "$PWD/${0#./}")
     sudo "$script_path" || (
